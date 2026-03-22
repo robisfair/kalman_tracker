@@ -187,7 +187,7 @@ Edit any `.json` config or create a new one:
 
 ### Landing Approach (a1f503)
 ![Landing Approach](example_plots/a1f503_approach.png)
-Aircraft coming in on a standard landing approach - likely inbound for final approach at DFW Runway 31L. X position shows steady west flight after t = 300s and Y position shows sharp south flight followed by turn to final heading at t = 400s. Innovations reach low oscillation and Position Error decreases at around t = 500s - presumably as aircraft is on final approach for 31L.
+Aircraft coming in on a standard landing approach - likely inbound for final approach at DFW Runway 31L (predicted runway based on analysis of flight pattern and runway layout - not real data). X position shows steady west flight after t = 300s and Y position shows sharp south flight followed by turn to final heading at t = 400s. Innovations reach low oscillation and Position Error decreases at around t = 500s - presumably as aircraft is on final approach.
 
 ### Standard Instrument Departure Procedure (aaa954)
 ![Departure](example_plots/aaa954_departure.png)
