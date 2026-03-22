@@ -37,8 +37,8 @@ kalman_tracker/
 │   ├── plot_results.py          # Python visualization script
 │   └── fetch_opensky_track.py   # Fetch real ADS-B tracks from OpenSky
 ├── data/
-│   ├── track_*.csv              # Raw ADS-B tracks (git-ignored)
-│   └── output_*.csv             # Filter output CSVs (git-ignored)
+│   ├── track_*.csv              # Raw ADS-B tracks
+│   └── output_*.csv             # Filter output CSVs
 └── example_plots/
     ├── a1f503_approach.png     # Example Landing approach validation plot - real data
     └── aaa954_departure.png    # Example Departure procedure validation plot - real data
