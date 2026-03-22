@@ -1,0 +1,23 @@
+{
+    "scenario_name": "evasive_degraded_sensors",
+    "duration_s": 90.0,
+    "dt_s": 0.5,
+    "process_noise_std": 2.0,
+    "motion_model": "evasive",
+    "sensors": [
+        {
+            "id": "Radar",
+            "pos_std_x": 20.0,
+            "pos_std_y": 20.0,
+            "detection_prob": 0.80,
+            "dropout_prob": 0.10
+        },
+        {
+            "id": "IR",
+            "pos_std_x": 35.0,
+            "pos_std_y": 15.0,
+            "detection_prob": 0.65,
+            "dropout_prob": 0.15
+        }
+    ]
+}
