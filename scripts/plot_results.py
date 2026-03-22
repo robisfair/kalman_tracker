@@ -3,7 +3,7 @@
 plot_results.py — Visualize Kalman Filter tracking results from CSV output.
 
 Usage:
-    python3 scripts/plot_results.py data/output_linear_3sensor.csv
+    python3 scripts/plot_results.py data/output_default_linear.csv
 """
 
 import sys
@@ -14,7 +14,8 @@ try:
     import matplotlib.pyplot as plt
     import matplotlib.gridspec as gridspec
 except ImportError:
-    print("Install matplotlib:  pip install matplotlib")
+    print("Library not installed: matplotlib")
+    print("Please install matplotlib:  pip install matplotlib")
     sys.exit(1)
 
 def load_csv(path):
@@ -108,6 +109,7 @@ def main():
     ax5.set_title("Filter Innovations (z - Hx̂)")
     ax5.legend(fontsize=8)
     ax5.grid(True, alpha=0.3)
+    ax5.set_ylim(-2000, 2000)
 
     out_path = path.replace(".csv", "_plot.png")
     plt.savefig(out_path, dpi=150, bbox_inches="tight")

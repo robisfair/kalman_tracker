@@ -1,0 +1,30 @@
+{
+    "scenario_name": "linear_3sensor",
+    "duration_s": 60.0,
+    "dt_s": 0.5,
+    "process_noise_std": 0.5,
+    "motion_model": "linear",
+    "sensors": [
+        {
+            "id": "Radar",
+            "pos_std_x": 15.0,
+            "pos_std_y": 15.0,
+            "detection_prob": 0.95,
+            "dropout_prob": 0.02
+        },
+        {
+            "id": "IR",
+            "pos_std_x": 25.0,
+            "pos_std_y": 10.0,
+            "detection_prob": 0.85,
+            "dropout_prob": 0.05
+        },
+        {
+            "id": "Acoustic",
+            "pos_std_x": 40.0,
+            "pos_std_y": 40.0,
+            "detection_prob": 0.70,
+            "dropout_prob": 0.10
+        }
+    ]
+}
